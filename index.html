@@ -68,14 +68,14 @@
     <!-- Technical Grid Overlay -->
     <div class="bg-grid"></div>
 
-    <!-- 1. Page Main Headline (Highly optimized for space) -->
-    <header class="w-full pt-6 pb-4 px-4 text-left relative z-10 max-w-xl mx-auto">
+    <!-- 1. Page Main Headline (Balanced UI: Centered alignment to anchor the form) -->
+    <header class="w-full pt-8 pb-6 px-4 text-center relative z-10 max-w-2xl mx-auto flex flex-col items-center">
         <!-- Ambient Glow -->
         <div class="absolute top-0 left-[50%] -translate-x-1/2 w-[500px] h-[200px] bg-[#3B82F6]/20 rounded-full blur-[90px] pointer-events-none -z-10"></div>
         
-        <h1 class="text-[26px] sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-[1.1] tracking-tight">
+        <h1 class="text-[28px] sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-[1.2] tracking-tight [text-wrap:balance]">
             Data Science and Machine Learning<br>
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#93C5FD] to-[#3B82F6] mt-1.5 block">Zero to Mastery Details</span>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#93C5FD] to-[#3B82F6] mt-2 block">Zero to Mastery Details</span>
         </h1>
     </header>
 
@@ -100,19 +100,19 @@
                 <!-- Countdown 4 Small Cards (Compact for Mobile) -->
                 <div class="flex justify-center gap-2 sm:gap-4 mb-1">
                     <div class="bg-[#0B0D17] border border-[#2E344D] rounded-lg w-14 h-14 sm:w-16 sm:h-16 flex flex-col items-center justify-center shadow-inner">
-                        <span id="days" class="text-lg sm:text-xl font-bold text-white leading-none mb-1">02</span>
+                        <span id="days" class="text-lg sm:text-xl font-bold text-white leading-none mb-1">00</span>
                         <span class="text-[9px] text-slate-400 uppercase tracking-widest font-semibold">Days</span>
                     </div>
                     <div class="bg-[#0B0D17] border border-[#2E344D] rounded-lg w-14 h-14 sm:w-16 sm:h-16 flex flex-col items-center justify-center shadow-inner">
-                        <span id="hours" class="text-lg sm:text-xl font-bold text-white leading-none mb-1">14</span>
+                        <span id="hours" class="text-lg sm:text-xl font-bold text-white leading-none mb-1">00</span>
                         <span class="text-[9px] text-slate-400 uppercase tracking-widest font-semibold">Hours</span>
                     </div>
                     <div class="bg-[#0B0D17] border border-[#2E344D] rounded-lg w-14 h-14 sm:w-16 sm:h-16 flex flex-col items-center justify-center shadow-inner">
-                        <span id="mins" class="text-lg sm:text-xl font-bold text-white leading-none mb-1">45</span>
+                        <span id="mins" class="text-lg sm:text-xl font-bold text-white leading-none mb-1">00</span>
                         <span class="text-[9px] text-slate-400 uppercase tracking-widest font-semibold">Mins</span>
                     </div>
                     <div class="bg-[#0B0D17] border border-[#3B82F6]/40 rounded-lg w-14 h-14 sm:w-16 sm:h-16 flex flex-col items-center justify-center shadow-[0_0_10px_rgba(59,130,246,0.1)]">
-                        <span id="secs" class="text-lg sm:text-xl font-bold text-[#60A5FA] leading-none mb-1 drop-shadow-[0_0_8px_rgba(96,165,250,0.8)]">30</span>
+                        <span id="secs" class="text-lg sm:text-xl font-bold text-[#60A5FA] leading-none mb-1 drop-shadow-[0_0_8px_rgba(96,165,250,0.8)]">00</span>
                         <span class="text-[9px] text-[#60A5FA] uppercase tracking-widest font-semibold">Secs</span>
                     </div>
                 </div>
@@ -155,7 +155,9 @@
                             <option value="Rajshahi">রাজশাহী (Rajshahi)</option>
                             <option value="Khulna">খুলনা (Khulna)</option>
                             <option value="Sylhet">সিলেট (Sylhet)</option>
-                            <option value="Other">অন্যান্য (Other)</option>
+                            <option value="Other">বরিশাল(Other)</option>
+                            <option value="Other">রংপুর(Other)</option>
+                            <option value="Other">ময়মনসিংহ    (Other)</option>
                         </select>
                     </div>
                 </div>
@@ -174,8 +176,9 @@
                         <select required class="input-field w-full px-3 sm:px-4 py-2.5 rounded-lg text-sm">
                             <option value="" disabled selected>নির্বাচন করুন</option>
                             <option value="HSC">HSC বা সমমান</option>
-                            <option value="Honors">স্নাতক (Honors/BSc)</option>
-                            <option value="Masters">স্নাতকোত্তর (Masters/MSc)</option>
+                            <option value="Honors">স্নাতক বা সমমান (Honors/BSc)</option>
+                            <option value="Masters">স্নাতকোত্তর বা সমমান(Masters/MSc)</option>
+                            <option value="Masters">অন্যান্য(Other)</option>
                         </select>
                     </div>
                 </div>
@@ -252,7 +255,6 @@
 
     <!-- 5. Data science and ML course (guidelines) Card -->
     <section class="max-w-4xl mx-auto px-4 pt-12 pb-16 flex flex-col items-center">
-        <!-- Replaced with the exact design from the uploaded image -->
         <div class="w-full rounded-[2rem] p-8 md:p-12 text-center relative overflow-hidden shadow-2xl group" style="background: radial-gradient(circle at 30% 95%, #0055ff 0%, #031b4e 45%, #020716 80%, #01030a 100%);">
 
             <!-- Top Header Text -->
@@ -279,7 +281,7 @@
                     <svg class="w-5 h-5 text-white/80" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path></svg>
                 </div>
 
-                <!-- Main Headline (Matching image typography & gradient) -->
+                <!-- Main Headline -->
                 <h3 class="text-4xl md:text-5xl lg:text-[56px] font-medium text-white mb-10 tracking-tight leading-[1.15] z-10 relative font-inter">
                     Need the blueprint?<br>
                     <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#E0F2FE] to-[#7DD3FC]">Download the syllabus</span>
@@ -291,7 +293,7 @@
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 7l-10 10m0 0V7m0 10h10"></path></svg>
                     </button>
                     <button class="h-12 px-6 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center shadow-lg text-white font-medium text-base tracking-wide">
-                        blueprint@skilljobs.com
+                        Get here
                     </button>
                 </div>
 
@@ -306,8 +308,20 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             
-            // Countdown Logic for the Form Header
-            let time = 2 * 24 * 60 * 60 + 14 * 3600 + 45 * 60 + 30; // 2 Days, 14 Hours, 45 Mins, 30 Secs
+            // Countdown Logic saving to LocalStorage so it doesn't reset on refresh
+            const countdownKey = 'skilljobs_countdown_end';
+            // Set duration for 2 days, 14 hours, 45 mins, 30 secs in milliseconds
+            const durationMs = (2 * 24 * 60 * 60 + 14 * 3600 + 45 * 60 + 30) * 1000;
+            
+            let endTime = localStorage.getItem(countdownKey);
+            
+            // If there's no saved time or the saved time is in the past, reset it
+            if (!endTime || isNaN(endTime) || parseInt(endTime) < Date.now()) {
+                endTime = Date.now() + durationMs;
+                localStorage.setItem(countdownKey, endTime);
+            } else {
+                endTime = parseInt(endTime);
+            }
             
             const daysEl = document.getElementById('days');
             const hoursEl = document.getElementById('hours');
@@ -315,13 +329,23 @@
             const secsEl = document.getElementById('secs');
             
             if(daysEl && hoursEl && minsEl && secsEl) {
-                setInterval(() => {
-                    if(time > 0) time--;
+                const timerInterval = setInterval(() => {
+                    const now = Date.now();
+                    const distance = endTime - now;
                     
-                    let d = Math.floor(time / (24 * 3600));
-                    let h = Math.floor((time % (24 * 3600)) / 3600);
-                    let m = Math.floor((time % 3600) / 60);
-                    let s = Math.floor(time % 60);
+                    if (distance < 0) {
+                        clearInterval(timerInterval);
+                        daysEl.innerText = '00';
+                        hoursEl.innerText = '00';
+                        minsEl.innerText = '00';
+                        secsEl.innerText = '00';
+                        return;
+                    }
+                    
+                    let d = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    let h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    let m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    let s = Math.floor((distance % (1000 * 60)) / 1000);
                     
                     daysEl.innerText = d.toString().padStart(2, '0');
                     hoursEl.innerText = h.toString().padStart(2, '0');
